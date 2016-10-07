@@ -1,0 +1,105 @@
+.profile-pic-full {
+    height: auto;
+    width: 30%;
+    float: right;
+    margin-right: 15%;
+}
+
+.entry-wrapper label input[type=file] {
+    display: none;
+}
+
+.entry-wrapper label:hover::after {
+    opacity: 1;
+}
+
+#profile-pic-upload input {
+    display: none;
+}
+
+.entry-wrapper label::after {
+    background: rgba(0, 0, 0, 0.6) url("../../images/magnifier.png") no-repeat scroll center center;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    z-index: 9;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.entry-wrapper label {
+    position: relative;
+    border-radius: 100%;
+}
+
+.profile-pic-full img {
+    margin: 0;
+    width: 100%;
+}
+
+.profile-pic-full-div {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.gallerypic {
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: 100%;
+    float: right;
+    margin-right: 15%;
+    margin-left: 0%;
+}
+
+.gallerypic span.zoom-icon {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 6%;
+    float: right;
+    margin-right: -18%;
+    margin-left: 0%;
+    background: rgba(0, 0, 0, .6);
+    visibility: hidden;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    margin-top: 12%;
+}
+
+.gallerypic:hover span.zoom-icon {
+    visibility: visible;
+}
+
